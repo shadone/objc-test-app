@@ -15,6 +15,7 @@
 		92FC04A22BC7F9EF00FE730F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 92FC04A12BC7F9EF00FE730F /* Base */; };
 		92FC04A52BC7F9EF00FE730F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC04A42BC7F9EF00FE730F /* main.m */; };
 		92FC04BD2BC7FD4500FE730F /* MyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 92FC04BC2BC7FD4500FE730F /* MyPackage */; };
+		92FC04BF2BC8157200FE730F /* Bazinga.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC04BE2BC8157200FE730F /* Bazinga.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		92FC04A32BC7F9EF00FE730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FC04A42BC7F9EF00FE730F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92FC04BA2BC7FC4C00FE730F /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
+		92FC04BE2BC8157200FE730F /* Bazinga.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bazinga.m; sourceTree = "<group>"; };
+		92FC04C02BC8158A00FE730F /* Bazinga.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bazinga.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				92FC04A02BC7F9EF00FE730F /* LaunchScreen.storyboard */,
 				92FC04A32BC7F9EF00FE730F /* Info.plist */,
 				92FC04A42BC7F9EF00FE730F /* main.m */,
+				92FC04BE2BC8157200FE730F /* Bazinga.m */,
+				92FC04C02BC8158A00FE730F /* Bazinga.h */,
 			);
 			path = "objc-test-app";
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				92FC049A2BC7F9EE00FE730F /* ViewController.m in Sources */,
 				92FC04942BC7F9EE00FE730F /* AppDelegate.m in Sources */,
 				92FC04A52BC7F9EF00FE730F /* main.m in Sources */,
+				92FC04BF2BC8157200FE730F /* Bazinga.m in Sources */,
 				92FC04972BC7F9EE00FE730F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

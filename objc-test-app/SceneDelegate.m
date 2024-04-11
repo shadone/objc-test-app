@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "Bazinga.h"
 
 @import MyPackage;
 
@@ -24,6 +25,10 @@
     NSLog(@"foobar.name: %@", [foobar name]);
     NSString *value = [foobar tada];
     NSLog(@"tada: %@", value);
+
+    id bazinga = [[Bazinga alloc] initWithFoobar:foobar];
+    NSString *retval = [bazinga tada];
+    NSLog(@"bazinga.tada: %@", retval);
 }
 
 
