@@ -5,7 +5,14 @@ import Foundation
 
 @objc
 public class Foobar: NSObject {
-    public override init() { }
+    @objc
+    public let name: String
+
+    @objc
+    public init(name: String) {
+        self.name = name
+        super.init()
+    }
 
     @objc
     public func tada() -> String { "hello world" }
