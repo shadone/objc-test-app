@@ -14,6 +14,7 @@
 		92FC049F2BC7F9EF00FE730F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FC049E2BC7F9EF00FE730F /* Assets.xcassets */; };
 		92FC04A22BC7F9EF00FE730F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 92FC04A12BC7F9EF00FE730F /* Base */; };
 		92FC04A52BC7F9EF00FE730F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC04A42BC7F9EF00FE730F /* main.m */; };
+		92FC04BD2BC7FD4500FE730F /* MyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 92FC04BC2BC7FD4500FE730F /* MyPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		92FC04A12BC7F9EF00FE730F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FC04A32BC7F9EF00FE730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FC04A42BC7F9EF00FE730F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92FC04BA2BC7FC4C00FE730F /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FC04BD2BC7FD4500FE730F /* MyPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +48,10 @@
 		92FC04862BC7F9EE00FE730F = {
 			isa = PBXGroup;
 			children = (
+				92FC04BA2BC7FC4C00FE730F /* Modules */,
 				92FC04912BC7F9EE00FE730F /* objc-test-app */,
 				92FC04902BC7F9EE00FE730F /* Products */,
+				92FC04BB2BC7FD4500FE730F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,13 @@
 			path = "objc-test-app";
 			sourceTree = "<group>";
 		};
+		92FC04BB2BC7FD4500FE730F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,6 +104,9 @@
 			dependencies = (
 			);
 			name = "objc-test-app";
+			packageProductDependencies = (
+				92FC04BC2BC7FD4500FE730F /* MyPackage */,
+			);
 			productName = "objc-test-app";
 			productReference = 92FC048F2BC7F9EE00FE730F /* objc-test-app.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +122,7 @@
 				TargetAttributes = {
 					92FC048E2BC7F9EE00FE730F = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -119,6 +135,8 @@
 				Base,
 			);
 			mainGroup = 92FC04862BC7F9EE00FE730F;
+			packageReferences = (
+			);
 			productRefGroup = 92FC04902BC7F9EE00FE730F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J8B76VBZ57;
@@ -314,6 +333,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "info.ddenis.objc-test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J8B76VBZ57;
@@ -341,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "info.ddenis.objc-test-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -367,6 +390,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92FC04BC2BC7FD4500FE730F /* MyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92FC04872BC7F9EE00FE730F /* Project object */;
 }
